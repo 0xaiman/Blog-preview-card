@@ -5,98 +5,65 @@
     --white: hsl(0, 0%, 100%);
     --grey: hsl(0, 0%, 50%);
     --black: hsl(0, 0%, 7%);
-
-}
-
-html{
-    background: var(--yellow);
-    font-family: 'Figtree',sans-serif;
-    height: 100%;
-
+    font-family: Figtree,sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 
 }
 
 body{
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
+    background-color:var(--yellow);
 
+}
 
 .card{
-    background: var(--white);
-    padding:24px;
+    border:1px solid black;
+    max-width:350px;
+    margin:  auto;
+    padding: 20px 10px ;
+    background-color: var(--white);
     border-radius: 20px;
-    border:2px solid black;
+
+}
+.content{
+    display: block;
+    margin: 0 auto;
+    /* border:1px solid black; */
+    max-width: 336px;
     
-    box-shadow: 10px 10px  rgb(0, 0, 0);
-}
 
-.preview{
-    width:100%;
-    height: auto;
+}
+img.preview{
     border-radius: 10px;
-    padding-bottom: 36px;
-}
+    width: 100%;
+    
 
+}
 .tag{
     background-color: var(--yellow);
-    width: 100%;
-    padding: 10px;
-    border-radius: 4px;
+    padding: 5px 10px;
     font-weight: 800;
 }
 .publish-info{
-    padding-top: 20px;
-    font-weight: 600;
+    font-weight: 100;
 }
-
 .title{
-    font-size: 20px;
     font-weight: 800;
 }
-.title:hover{
-    color:var(--yellow)
-}
-
-.description{
-    font-weight: 600;
-}
-
 .author-info{
-    display:flex;
-    flex-direction: row;
-    justify-content: start;
-    width:100%
+    display: flex;
+    gap:10px;
+    max-height: 35px;
+
+}
+.author-info p{
+    height: 100%;
+    margin: auto 0;
 }
 
 .author-pic{
-    width:7%;
-    width:18%;
-
-}
-.author-name{
-    padding:0 10px;
-    font-weight: 800;;
-}
-.attribution{
-    padding-top: 30px;
-}
-
-
-@media screen and (min-width:1000px){
-    body,html{
-        height: auto;
-        max-height: 100%;
-
-    }
-  
-    .card{
-        max-width:300px;
-    }
-
+    display: flex;
+    width: 10%;
+    height: auto;
 }
